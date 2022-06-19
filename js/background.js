@@ -7,9 +7,5 @@ const images = [
 ]
 
 const randomImage = images[Math.floor(Math.random()*images.length)]
-
-const bgImage = document.createElement("img")
-
-bgImage.src = `img/${randomImage}`
-
-document.body.appendChild(bgImage)
+console.dir(document.body.style)
+document.body.style.backgroundImage = `url(./img/${randomImage})`

@@ -1,7 +1,92 @@
 body {
-  background: beige;
+  width:100vw;
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+#login-form h1, #greeting,#clock{
+  color:white;
+  text-shadow: 2px 2px 3px rgba(0,0,0,.8);
+  font-size:40px;
+}
+
+#clock{
+  font-size: 36px;
+  margin:16px 0;
+  color:coral;
+}
+
+#login-form div{
+  text-align: center;
+}
+
+#greeting{
+  margin:0;
 }
 
 .hidden {
   display:none
+}
+
+#todo-container{
+  background: rgba(0,0,0,.65);
+  border-radius: 20px;
+  padding:24px 36px;
+  width:400px;
+  margin-bottom:48px;
+}
+
+#todo-form{
+  width:100%;
+  
+}
+
+#todo-form input{
+  width:100%;
+  height:24px;
+}
+
+#todo-list{
+  font-size: 24px;
+  color:white;
+  list-style: square;
+  overflow-y: auto;
+}
+
+#todo-list li{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap:14px;
+}
+#todo-list li button {
+  cursor: pointer;
+  background: transparent;
+  border:0;
+  transition: opacity .4s;
+}
+#todo-list li button:hover {
+  
+  opacity:0.4;
+  
+}
+
+#quote{
+  text-shadow: 2px 2px 3px rgba(0,0,0,.8);
+}
+
+#quote>span:nth-child(1){
+  font-size: 24px;
+  color:#e9e9e9;
+}
+#quote>span:nth-child(2){
+  font-size: 17px;
+  color:rgb(112, 223, 199);
 }
